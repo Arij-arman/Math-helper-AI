@@ -14,32 +14,46 @@
 import time
 i = 1
 time.sleep(2.2)
-print('<<<<<====================================>>>>>')
-print("----------[Welcome to my Math Class]----------")
-print('<<<<<====================================>>>>>')
+print('<<<<<======================================================================>>>>>')
+print("            )----------[Welcome to my Math Class]----------(")
+print('<<<<<=======================================================================>>>>>')
 print('')
 time.sleep(1.3)
 arij_constant = 1
 while True:
 	time.sleep(0.5)
+	print('')
+	print('')
 	print('  (((======================================================)))')
-	print('                What solution do you want ?')
+	print('                   ( What solution do you want ?)                  ')
 	print('(((============================================================)))')
-	time.sleep(1.2)
-	print('  [1] Add or Plus(a+b)                  [6] Simple Interset')
-	time.sleep(0.4)
-	print('  [2] Substract or Minus(a-b)           [7] Compound Interset')
-	time.sleep(0.4)
-	print('  [3] Multiply or into(a x b)           [8] Square, Cubes and others')
-	time.sleep(0.4)
-	print('  [4] Division or x/y                   [9] Nothing')
-	time.sleep(0.4)
-	print('  [5] Roots                             [10] Math on Workers and Time')
-	time.sleep(0.4)
-	print('')
-	print('           [99] Exit(press 99 and enter)')
+	print('                            -Developed by A_R_I_J_A_R_M_A_N')
+	print('                                          _________________')
 	
+	print('(=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=)')
 	print('')
+	print()
+	time.sleep(1.2)
+	print('  [1] Add or Plus(a+b)            |      [6] Simple Interset')
+	time.sleep(0.4)                          
+	print('  [2] Substract or Minus(a-b)     |      [7] Compound Interset')
+	time.sleep(0.4)
+	print('  [3] Multiply or into(a x b)     |      [8] Square, Cubes and others')
+	time.sleep(0.4)
+	print('  [4] Division or x/y             |      [9] Nothing')
+	time.sleep(0.4)
+	print('  [5] Roots                       |      [10] Math on Workers and Time')
+	time.sleep(0.4)
+	print('                                  |                                    ')
+	time.sleep(0.4)
+	print('                     [99] Exit(press 99 and enter)                     ')
+	time.sleep(0.4)
+	print()
+	print()
+	print('(=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=)')
+	print('')
+	print('')
+	time.sleep(0.6)
 	user = int(input('(@)_Choose a number[1-10/99]: '))
 	print("")
 	# Plus,minus,multiply and division zone
@@ -72,29 +86,41 @@ while True:
 		print('>>>>Answer is= ',num1*num2)
 	elif user == 4 :
 		num1 = float(input('[*] Enter the 1st number: '))
+		print('')
 		num2 = float(input('[*] Enter the 2nd number: '))	
+		print('')
+		time.sleep(0.4)
 		print('>>>>Answer is= ',num1/num2)
+		print('')
 	# For root in mathematical	
 	elif user == 5 :
 		aaa = 1
 		while True:
 			print('[1] Square roots')
+			time.sleep(0.4)
 			print('[2] Cube roots')
+			time.sleep(0.4)
 			print('[3] Choose custom                 [99] Exit Main menu')
+			time.sleep(0.4)
+			print('')
 			choice = int(input('Enter choice: '))
 			if choice == 1:
-				print()
+				print('')
 				a = float(input('Enter the number: '))
 				time.sleep(0.3)
 				b= a**0.5
-				
+				print('')
 				print('The square root of',a, "is", b)
+				print('')
 				
 			elif choice == 2 :
+				print('')
+				time.sleep(0.4)
 				a = float(input('Enter the number: '))
 				time.sleep(0.3)
 				b= a**0.33333333333333333333333333333333333
 				c = round(b)
+				print('')
 				print('The cube root of',a, "is", c)
 			elif choice == 3:
 				root = int(input('Enter the Root power or Exponent: '))
@@ -103,7 +129,9 @@ while True:
 				b = a**chroot
 				c = round(b)
 				x = int(a)
+				time.sleep(0.4)
 				print('The', root,"th power of", x, 'is =', b)
+				print('')
 			elif choice == 99 :
 				print()
 				break
