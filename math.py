@@ -40,7 +40,7 @@ while True:
 	time.sleep(0.4)
 	print('  [3] Multiply or into(a x b)     |      [8] Square, Cubes and others')
 	time.sleep(0.4)
-	print('  [4] Division or x/y             |      [9] Nothing')
+	print('  [4] Division or x/y             |      [9] Prime Numbers')
 	time.sleep(0.4)
 	print('  [5] Roots                       |      [10] Math on Workers and Time')
 	time.sleep(0.4)
@@ -54,7 +54,7 @@ while True:
 	print('')
 	print('')
 	time.sleep(0.6)
-	user = int(input('(@)_Choose a number[1-10/99]: '))
+	user = float(input('(@)_Choose a number[1-10/99]: '))
 	print("")
 	# Plus,minus,multiply and division zone
 	if user == 1 :
@@ -103,7 +103,7 @@ while True:
 			print('[3] Choose custom                 [99] Exit Main menu')
 			time.sleep(0.4)
 			print('')
-			choice = int(input('Enter choice: '))
+			choice = float(input('Enter choice: '))
 			if choice == 1:
 				print('')
 				a = float(input('Enter the number: '))
@@ -123,12 +123,12 @@ while True:
 				print('')
 				print('The cube root of',a, "is", c)
 			elif choice == 3:
-				root = int(input('Enter the Root power or Exponent: '))
+				root = float(input('Enter the Root power or Exponent: '))
 				chroot = 1/root
 				a = float(input('Enter the number: '))
 				b = a**chroot
 				c = round(b)
-				x = int(a)
+				x = float(a)
 				time.sleep(0.4)
 				print('The', root,"th power of", x, 'is =', b)
 				print('')
@@ -152,7 +152,7 @@ while True:
 			print('[4] Interest')
 			print('')
 			time.sleep(0.4)
-			inp = int(input('Enter your chice: '))
+			inp = float(input('Enter your chice: '))
 			if inp == 1 :
 				t = float(input('Enter the time span: '))
 				r = float(input('Enter the % of Interest: '))
@@ -201,13 +201,13 @@ while True:
 			print('[1] Start Compound Interest      [2] Exit Main-menu')
 			time.sleep(0.4)
 			print('')
-			uss = int(input('Enter your choice: '))
+			uss = float(input('Enter your choice: '))
 			print('')
 			if uss == 1 :
 				time.sleep(0.5)
 				p = float(input('Enter the Principle amount: '))
 				print('')
-				t = int(input('Enter the Time span: '))
+				t = float(input('Enter the Time span: '))
 				print('')
 				r = float(input('Enter the % of interst : '))
 				print('')
@@ -224,6 +224,67 @@ while True:
 				print('')
 				print('Error! Invalid Input...')
 			aaa += 1
+	elif user == 8 :
+		aaakk = 1
+		while True:
+			print('******************(SQUARES CUBES & OTHERS)******************')
+			aaakk += 1
+			print('[1] Square ')
+			time.sleep(0.4)
+			print('[2] Cubes')
+			time.sleep(0.3)
+			print('[3] Custom Choice         [99] Exit Main-menu')
+			time.sleep(0.4)
+			print()
+			
+			choice = int(input('Enter your choice: '))
+			if choice == 1 :
+				print()
+				sqr = float(input('>> Enter the number to square: '))
+				aa = sqr**2
+				print('Square of {0} is '.format(sqr))
+				print(aa)
+				print()
+			
+			elif choice == 2 :
+				print()
+				cube = float(input('>> Enter the number to square: '))
+				aa = cube**3
+				print('Cube of {0} is '.format(cube))
+				print(aa)
+				print()
+			elif choice == 3 :
+				print()
+				cube = float(input('>> Enter the Exponent or power: '))
+				print()
+				cubee = float(input('>> Enter the number : '))
+				aa = cubee**cube
+				print(cube,'th power of {0} is '.format(cubee))
+				print(aa)
+				print()
+			elif choice == 99 :
+				print()
+				print('Exiting Main-menu...')
+				time.sleep(0.9)
+				break
+			else :
+				print()
+				time.sleep(0.5)
+				print('Error ! Invalid Input.')
+	elif user == 9 :
+		lower = int(input('Enter the lower value: '))
+		upper = int(input('Enter the upper value: '))
+		print()
+		print('The prime numbers are :')
+		for num in range(lower,upper+1):
+			if num > 1:
+				for i in range(2,num):
+					if (num % i) == 0:
+						break
+				else :
+					
+					print(num,end=",")	
+				
 		
 	elif user == 10 :
 		arij_constant = 1
@@ -241,24 +302,24 @@ while True:
 			time.sleep(0.8)
 			print('')
 			time.sleep(1.0)
-			choice_first = int(input("👨‍💻️==> Enter the Choice[1 to 4 or 99]: "))
+			choice_first = float(input("👨‍💻️==> Enter the Choice[1 to 4 or 99]: "))
 			print('')
 			time.sleep(1.3)
 			if choice_first == 1:
 				print('==> Enter the given examples of Workers,Time & Worked_Place:')
-				a = int(input('==> Enter Workers: '))
+				a = float(input('==> Enter Workers: '))
 				print('')
-				b = int(input('==> Enter Time: '))
+				b = float(input('==> Enter Time: '))
 				print('')
-				c = int(input('==> Enter Worked_Place: '))
+				c = float(input('==> Enter Worked_Place: '))
 				print('')
 				k = (b*a)/c
 				time.sleep(0.8)
 				print('==> Enter the value of 2nd_Time & 2nd_Worked_Place:')
 				print('')
-				b2 = int(input('==> Enter 2nd_Time: '))
+				b2 = float(input('==> Enter 2nd_Time: '))
 				print('')
-				c2 = int(input('==> Enter 2nd_Worked_Place: '))
+				c2 = float(input('==> Enter 2nd_Worked_Place: '))
 				print('')
 				print('The amount of Workers is:')
 				time.sleep(0.8)
@@ -268,19 +329,19 @@ while True:
 			elif choice_first == 2 :
 				print('==> Enter the given examples of Workers,Time & Worked_Place:')
 				print('')
-				a = int(input('==> Enter Workers: '))
+				a = float(input('==> Enter Workers: '))
 				print('')
-				b = int(input('==> Enter Time: '))
+				b = float(input('==> Enter Time: '))
 				print('')
-				c = int(input('==> Enter Worked_Place: '))
+				c = float(input('==> Enter Worked_Place: '))
 				print('')
 				k = (b*a)/c
 				time.sleep(0.8)
 				print('==> Enter the value of 2nd_Workers & 2nd_Worked_Place:')
 				print('')
-				a2 = int(input('==> Enter 2nd_Workers: '))
+				a2 = float(input('==> Enter 2nd_Workers: '))
 				print('')
-				c2 = int(input('==> Enter 2nd_Worked_Place: '))
+				c2 = float(input('==> Enter 2nd_Worked_Place: '))
 				print('')
 				b2 = (k*c2)/a2
 				print('The amount of Time is:')
@@ -290,19 +351,19 @@ while True:
 			elif choice_first == 3 :
 				print('==> Enter the given examples of Workers,Time & Worked_Place:\n')
 				print('')
-				a = int(input('==> Enter Workers: '))
+				a = float(input('==> Enter Workers: '))
 				print('')
-				b = int(input('==> Enter Time: '))
+				b = float(input('==> Enter Time: '))
 				print('')
-				c = int(input('==> Enter Worked_Place: '))
+				c = float(input('==> Enter Worked_Place: '))
 				print('')
 				k = (b*a)/c
 				time.sleep(0.8)
 				print('==> Enter the value of 2nd_Workers & 2nd_Time:\n')
 				print('')
-				a2 = int(input('==> Enter 2nd_Workers: '))
+				a2 = float(input('==> Enter 2nd_Workers: '))
 				print('')
-				b2 = int(input('==> Enter 2nd_Time: '))
+				b2 = float(input('==> Enter 2nd_Time: '))
 				print('')
 				c2 = (a2*b2)/k
 				print('The amount of 2nd_Worked_Place is :')
@@ -319,6 +380,7 @@ while True:
 				print('Error! Invalid Input. Try again...')
 
 		arij_constant += 1
+		# exited code of workers and time 
 	elif user == 99 :
 		print('>>>> Exiting claculator. Have a nice day...')
 		time.sleep(2.2)
